@@ -1,8 +1,25 @@
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+// New points
+function sendMessageToTelegram() {
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+    
+    // Replace 'YOUR_TELEGRAM_BOT_TOKEN' with your Telegram bot token
+    // Replace 'YOUR_TELEGRAM_CHAT_ID' with your Telegram chat ID
+    var url = "https://api.telegram.org/botYOUR_TELEGRAM_BOT_TOKEN/sendMessage?chat_id=YOUR_TELEGRAM_CHAT_ID&text=Name: " + name + "%0AEmail: " + email + "%0AMessage: " + message;
+
+    // Send a request to the Telegram API
+    fetch(url)
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            alert("Message sent successfully!");
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            alert("An error occurred while sending the message.");
+        });
+}
 
 (function($) {
 

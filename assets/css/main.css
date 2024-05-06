@@ -1,5 +1,10 @@
 @import url(fontawesome-all.min.css);
 /* New */
+.project-image {
+	border-radius: 10px;
+	width: 100%; /* Adjust the width and height as needed */
+	height: auto;
+}
 .profile-image {
     border-radius: 50%;
     width: 90px; /* Adjust the width and height as needed */
@@ -203,6 +208,7 @@ input, select, textarea {
 		}
 
 			h1.major:after {
+				/* background-color: black; */
 				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
