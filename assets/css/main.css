@@ -1,10 +1,5 @@
 @import url(fontawesome-all.min.css);
 /* New */
-.project-image {
-	border-radius: 10px;
-	width: 100%; /* Adjust the width and height as needed */
-	height: auto;
-}
 .profile-image {
     border-radius: 50%;
     width: 90px; /* Adjust the width and height as needed */
@@ -15,6 +10,12 @@
     text-decoration: underline;
     font-weight: bold;
     color: #f9f9f9;
+}
+.project-image {
+    border-radius: 50%;
+    width: 90px; /* Adjust the width and height as needed */
+    height: 90px;
+	vertical-align: middle;
 }
 /* Old */
 html, body, div, span, applet, object,
