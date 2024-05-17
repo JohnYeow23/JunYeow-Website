@@ -2,8 +2,8 @@
 /* New */
 .profile-image {
     border-radius: 50%;
-    width: 90px; /* Adjust the width and height as needed */
-    height: 90px;
+    width: 150px; /* Adjust the width and height as needed */
+    height: 150px;
 	vertical-align: middle;
 }
 .resume-link {
